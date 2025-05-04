@@ -1,0 +1,277 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.rent_home"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:6:5-80
+12-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:6:22-77
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:7:5-81
+13-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:7:22-78
+14
+15    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+16    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.google.firebase:firebase-database:19.3.1] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\d03cd3a7f6946c705a9b6b75f4907d53\jetified-firebase-database-19.3.1\AndroidManifest.xml:25:5-79
+17-->[com.google.firebase:firebase-database:19.3.1] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\d03cd3a7f6946c705a9b6b75f4907d53\jetified-firebase-database-19.3.1\AndroidManifest.xml:25:22-76
+18
+19    <uses-feature
+19-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.1.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\0d967ac24d33dbedabbbfda7fe3b42d3\jetified-mapbox-android-sdk-9.1.0\AndroidManifest.xml:9:5-11:35
+20        android:glEsVersion="0x00020000"
+20-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.1.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\0d967ac24d33dbedabbbfda7fe3b42d3\jetified-mapbox-android-sdk-9.1.0\AndroidManifest.xml:10:9-41
+21        android:required="true" />
+21-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.1.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\0d967ac24d33dbedabbbfda7fe3b42d3\jetified-mapbox-android-sdk-9.1.0\AndroidManifest.xml:11:9-32
+22    <uses-feature
+22-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.1.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\0d967ac24d33dbedabbbfda7fe3b42d3\jetified-mapbox-android-sdk-9.1.0\AndroidManifest.xml:12:5-14:36
+23        android:name="android.hardware.wifi"
+23-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.1.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\0d967ac24d33dbedabbbfda7fe3b42d3\jetified-mapbox-android-sdk-9.1.0\AndroidManifest.xml:13:9-45
+24        android:required="false" />
+24-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.1.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\0d967ac24d33dbedabbbfda7fe3b42d3\jetified-mapbox-android-sdk-9.1.0\AndroidManifest.xml:14:9-33
+25
+26    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+26-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.1.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\0d967ac24d33dbedabbbfda7fe3b42d3\jetified-mapbox-android-sdk-9.1.0\AndroidManifest.xml:18:5-76
+26-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.1.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\0d967ac24d33dbedabbbfda7fe3b42d3\jetified-mapbox-android-sdk-9.1.0\AndroidManifest.xml:18:22-73
+27    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Required for CrashReporterJobIntentService on API levels below 25 -->
+27-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.1.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\0d967ac24d33dbedabbbfda7fe3b42d3\jetified-mapbox-android-sdk-9.1.0\AndroidManifest.xml:19:5-79
+27-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.1.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\0d967ac24d33dbedabbbfda7fe3b42d3\jetified-mapbox-android-sdk-9.1.0\AndroidManifest.xml:19:22-76
+28    <uses-permission android:name="android.permission.WAKE_LOCK" />
+28-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\ca103128384456b871fdf7448fae941d\jetified-mapbox-android-telemetry-5.0.0\AndroidManifest.xml:12:5-68
+28-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\ca103128384456b871fdf7448fae941d\jetified-mapbox-android-telemetry-5.0.0\AndroidManifest.xml:12:22-65
+29
+30    <application
+30-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:9:5-46:19
+31        android:allowBackup="true"
+31-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:10:9-35
+32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+32-->[androidx.core:core:1.3.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\8cda1174697fab5b03eb1eda6d314b59\core-1.3.0\AndroidManifest.xml:24:18-86
+33        android:debuggable="true"
+34        android:extractNativeLibs="false"
+35        android:icon="@mipmap/ic_launcher"
+35-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:11:9-43
+36        android:label="@string/app_name"
+36-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:12:9-41
+37        android:roundIcon="@mipmap/ic_launcher_round"
+37-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:13:9-54
+38        android:supportsRtl="true"
+38-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:14:9-35
+39        android:testOnly="true"
+40        android:theme="@style/AppTheme" >
+40-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:15:9-40
+41        <activity android:name="com.example.rent_home.confirmRent" />
+41-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:16:9-58
+41-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:16:19-46
+42        <activity android:name="com.example.rent_home.chnagePassword" />
+42-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:17:9-52
+42-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:17:19-49
+43        <activity android:name="com.example.rent_home.HomeDetails" />
+43-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:18:9-49
+43-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:18:19-46
+44        <activity android:name="com.example.rent_home.SearchResults" />
+44-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:19:9-51
+44-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:19:19-48
+45        <activity android:name="com.example.rent_home.tracLocation" />
+45-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:20:9-50
+45-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:20:19-47
+46        <activity android:name="com.example.rent_home.AboutUs" />
+46-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:21:9-45
+46-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:21:19-42
+47        <activity android:name="com.example.rent_home.Settings" />
+47-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:22:9-46
+47-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:22:19-43
+48        <activity android:name="com.example.rent_home.Notifications" />
+48-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:23:9-51
+48-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:23:19-48
+49        <activity android:name="com.example.rent_home.MyPosts" />
+49-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:24:9-45
+49-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:24:19-42
+50        <activity android:name="com.example.rent_home.HomePage" />
+50-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:25:9-46
+50-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:25:19-43
+51        <activity android:name="com.example.rent_home.editProfile" />
+51-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:26:9-49
+51-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:26:19-46
+52        <activity android:name="com.example.rent_home.PostAHome" />
+52-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:27:9-47
+52-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:27:19-44
+53        <activity android:name="com.example.rent_home.search" />
+53-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:28:9-44
+53-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:28:19-41
+54        <activity android:name="com.example.rent_home.Profile" />
+54-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:29:9-45
+54-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:29:19-42
+55        <activity android:name="com.example.rent_home.Register" />
+55-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:30:9-46
+55-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:30:19-43
+56        <activity android:name="com.example.rent_home.Login" />
+56-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:31:9-43
+56-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:31:19-40
+57        <activity android:name="com.example.rent_home.MainActivity" >
+57-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:32:9-38:20
+57-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:32:19-47
+58            <intent-filter>
+58-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:33:13-37:29
+59                <action android:name="android.intent.action.MAIN" />
+59-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:34:17-69
+59-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:34:25-66
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:36:17-77
+61-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:36:27-74
+62            </intent-filter>
+63        </activity>
+64        <activity
+64-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:39:9-41:59
+65            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+65-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:40:13-76
+66            android:theme="@style/Base.Theme.AppCompat" />
+66-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:41:13-56
+67
+68        <meta-data
+68-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:43:9-45:57
+69            android:name="preloaded_fonts"
+69-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:44:13-43
+70            android:resource="@array/preloaded_fonts" />
+70-->C:\Users\tashr\AndroidStudioProjects\Rent_Home-master\app\src\main\AndroidManifest.xml:45:13-54
+71
+72        <activity
+72-->[com.mapbox.mapboxsdk:mapbox-android-plugin-places-v9:0.12.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\29f7b363b604cdc180a7978c818a46ed\jetified-mapbox-android-plugin-places-v9-0.12.0\AndroidManifest.xml:10:9-14:68
+73            android:name="com.mapbox.mapboxsdk.plugins.places.autocomplete.ui.PlaceAutocompleteActivity"
+73-->[com.mapbox.mapboxsdk:mapbox-android-plugin-places-v9:0.12.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\29f7b363b604cdc180a7978c818a46ed\jetified-mapbox-android-plugin-places-v9-0.12.0\AndroidManifest.xml:11:13-105
+74            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+74-->[com.mapbox.mapboxsdk:mapbox-android-plugin-places-v9:0.12.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\29f7b363b604cdc180a7978c818a46ed\jetified-mapbox-android-plugin-places-v9-0.12.0\AndroidManifest.xml:12:13-122
+75            android:theme="@style/mapbox_plugins_translucent"
+75-->[com.mapbox.mapboxsdk:mapbox-android-plugin-places-v9:0.12.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\29f7b363b604cdc180a7978c818a46ed\jetified-mapbox-android-plugin-places-v9-0.12.0\AndroidManifest.xml:13:13-62
+76            android:windowSoftInputMode="stateVisible|adjustPan" />
+76-->[com.mapbox.mapboxsdk:mapbox-android-plugin-places-v9:0.12.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\29f7b363b604cdc180a7978c818a46ed\jetified-mapbox-android-plugin-places-v9-0.12.0\AndroidManifest.xml:14:13-65
+77        <activity
+77-->[com.mapbox.mapboxsdk:mapbox-android-plugin-places-v9:0.12.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\29f7b363b604cdc180a7978c818a46ed\jetified-mapbox-android-plugin-places-v9-0.12.0\AndroidManifest.xml:15:9-17:125
+78            android:name="com.mapbox.mapboxsdk.plugins.places.picker.ui.PlacePickerActivity"
+78-->[com.mapbox.mapboxsdk:mapbox-android-plugin-places-v9:0.12.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\29f7b363b604cdc180a7978c818a46ed\jetified-mapbox-android-plugin-places-v9-0.12.0\AndroidManifest.xml:16:13-93
+79            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+79-->[com.mapbox.mapboxsdk:mapbox-android-plugin-places-v9:0.12.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\29f7b363b604cdc180a7978c818a46ed\jetified-mapbox-android-plugin-places-v9-0.12.0\AndroidManifest.xml:17:13-122
+80        <activity
+80-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\2a666cc8240866a1080e2e0e429921a7\jetified-firebase-auth-19.3.2\AndroidManifest.xml:24:9-31:50
+81            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+81-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\2a666cc8240866a1080e2e0e429921a7\jetified-firebase-auth-19.3.2\AndroidManifest.xml:25:13-85
+82            android:excludeFromRecents="true"
+82-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\2a666cc8240866a1080e2e0e429921a7\jetified-firebase-auth-19.3.2\AndroidManifest.xml:26:13-46
+83            android:exported="true"
+83-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\2a666cc8240866a1080e2e0e429921a7\jetified-firebase-auth-19.3.2\AndroidManifest.xml:27:13-36
+84            android:launchMode="singleTask"
+84-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\2a666cc8240866a1080e2e0e429921a7\jetified-firebase-auth-19.3.2\AndroidManifest.xml:28:13-44
+85            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+85-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\2a666cc8240866a1080e2e0e429921a7\jetified-firebase-auth-19.3.2\AndroidManifest.xml:29:13-102
+86            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+86-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\2a666cc8240866a1080e2e0e429921a7\jetified-firebase-auth-19.3.2\AndroidManifest.xml:30:13-72
+87
+88        <service
+88-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\2a666cc8240866a1080e2e0e429921a7\jetified-firebase-auth-19.3.2\AndroidManifest.xml:33:9-39:19
+89            android:name="com.google.firebase.components.ComponentDiscoveryService"
+89-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\2a666cc8240866a1080e2e0e429921a7\jetified-firebase-auth-19.3.2\AndroidManifest.xml:34:13-84
+90            android:directBootAware="true"
+90-->[com.google.firebase:firebase-common:19.3.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\167fcbb57fe3eee37a07022ca11b1245\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+91            android:exported="false" >
+91-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\2a666cc8240866a1080e2e0e429921a7\jetified-firebase-auth-19.3.2\AndroidManifest.xml:35:13-37
+92            <meta-data
+92-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\2a666cc8240866a1080e2e0e429921a7\jetified-firebase-auth-19.3.2\AndroidManifest.xml:36:13-38:85
+93                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+93-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\2a666cc8240866a1080e2e0e429921a7\jetified-firebase-auth-19.3.2\AndroidManifest.xml:37:17-109
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\2a666cc8240866a1080e2e0e429921a7\jetified-firebase-auth-19.3.2\AndroidManifest.xml:38:17-82
+95            <meta-data
+95-->[com.google.firebase:firebase-database:19.3.1] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\d03cd3a7f6946c705a9b6b75f4907d53\jetified-firebase-database-19.3.1\AndroidManifest.xml:32:13-34:85
+96                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+96-->[com.google.firebase:firebase-database:19.3.1] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\d03cd3a7f6946c705a9b6b75f4907d53\jetified-firebase-database-19.3.1\AndroidManifest.xml:33:17-109
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[com.google.firebase:firebase-database:19.3.1] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\d03cd3a7f6946c705a9b6b75f4907d53\jetified-firebase-database-19.3.1\AndroidManifest.xml:34:17-82
+98            <meta-data
+98-->[com.google.firebase:firebase-firestore:21.5.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\ac1eb4290e240a629d5e3fd3f6e8e4a2\jetified-firebase-firestore-21.5.0\AndroidManifest.xml:20:13-22:85
+99                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+99-->[com.google.firebase:firebase-firestore:21.5.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\ac1eb4290e240a629d5e3fd3f6e8e4a2\jetified-firebase-firestore-21.5.0\AndroidManifest.xml:21:17-111
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[com.google.firebase:firebase-firestore:21.5.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\ac1eb4290e240a629d5e3fd3f6e8e4a2\jetified-firebase-firestore-21.5.0\AndroidManifest.xml:22:17-82
+101            <meta-data
+101-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\039274378dde6f941b0b385b5013b680\jetified-firebase-storage-19.1.1\AndroidManifest.xml:33:13-35:85
+102                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+102-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\039274378dde6f941b0b385b5013b680\jetified-firebase-storage-19.1.1\AndroidManifest.xml:34:17-107
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\039274378dde6f941b0b385b5013b680\jetified-firebase-storage-19.1.1\AndroidManifest.xml:35:17-82
+104        </service>
+105
+106        <provider
+106-->[com.squareup.picasso:picasso:2.71828] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\a2647b0cad1e18e1ecb6cc7c8d032b04\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+107            android:name="com.squareup.picasso.PicassoProvider"
+107-->[com.squareup.picasso:picasso:2.71828] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\a2647b0cad1e18e1ecb6cc7c8d032b04\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+108            android:authorities="com.example.rent_home.com.squareup.picasso"
+108-->[com.squareup.picasso:picasso:2.71828] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\a2647b0cad1e18e1ecb6cc7c8d032b04\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+109            android:exported="false" />
+109-->[com.squareup.picasso:picasso:2.71828] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\a2647b0cad1e18e1ecb6cc7c8d032b04\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+110        <provider
+110-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\ca103128384456b871fdf7448fae941d\jetified-mapbox-android-telemetry-5.0.0\AndroidManifest.xml:18:9-22:39
+111            android:name="com.mapbox.android.telemetry.provider.MapboxTelemetryInitProvider"
+111-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\ca103128384456b871fdf7448fae941d\jetified-mapbox-android-telemetry-5.0.0\AndroidManifest.xml:19:13-93
+112            android:authorities="com.example.rent_home.mapboxtelemetryinitprovider"
+112-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\ca103128384456b871fdf7448fae941d\jetified-mapbox-android-telemetry-5.0.0\AndroidManifest.xml:20:13-79
+113            android:exported="false"
+113-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\ca103128384456b871fdf7448fae941d\jetified-mapbox-android-telemetry-5.0.0\AndroidManifest.xml:21:13-37
+114            android:initOrder="100" />
+114-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\ca103128384456b871fdf7448fae941d\jetified-mapbox-android-telemetry-5.0.0\AndroidManifest.xml:22:13-36
+115
+116        <service
+116-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\ca103128384456b871fdf7448fae941d\jetified-mapbox-android-telemetry-5.0.0\AndroidManifest.xml:24:9-26:72
+117            android:name="com.mapbox.android.telemetry.crash.CrashReporterJobIntentService"
+117-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\ca103128384456b871fdf7448fae941d\jetified-mapbox-android-telemetry-5.0.0\AndroidManifest.xml:25:13-92
+118            android:permission="android.permission.BIND_JOB_SERVICE" />
+118-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\ca103128384456b871fdf7448fae941d\jetified-mapbox-android-telemetry-5.0.0\AndroidManifest.xml:26:13-69
+119
+120        <activity
+120-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\ed4ee14058046286c242987b65f73958\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+121            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+121-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\ed4ee14058046286c242987b65f73958\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+122            android:exported="false"
+122-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\ed4ee14058046286c242987b65f73958\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+123            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+123-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\ed4ee14058046286c242987b65f73958\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+124
+125        <provider
+125-->[com.google.firebase:firebase-common:19.3.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\167fcbb57fe3eee37a07022ca11b1245\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+126            android:name="com.google.firebase.provider.FirebaseInitProvider"
+126-->[com.google.firebase:firebase-common:19.3.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\167fcbb57fe3eee37a07022ca11b1245\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+127            android:authorities="com.example.rent_home.firebaseinitprovider"
+127-->[com.google.firebase:firebase-common:19.3.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\167fcbb57fe3eee37a07022ca11b1245\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+128            android:exported="false"
+128-->[com.google.firebase:firebase-common:19.3.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\167fcbb57fe3eee37a07022ca11b1245\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+129            android:initOrder="100" />
+129-->[com.google.firebase:firebase-common:19.3.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\167fcbb57fe3eee37a07022ca11b1245\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+130
+131        <meta-data
+131-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\693e6c77f90feeec2e5633e1c7d00be9\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+132            android:name="com.google.android.gms.version"
+132-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\693e6c77f90feeec2e5633e1c7d00be9\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+133            android:value="@integer/google_play_services_version" />
+133-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\693e6c77f90feeec2e5633e1c7d00be9\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+134
+135        <provider
+135-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\855896d6a2ab35da8c7143b49e730807\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+136            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+136-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\855896d6a2ab35da8c7143b49e730807\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+137            android:authorities="com.example.rent_home.lifecycle-process"
+137-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\855896d6a2ab35da8c7143b49e730807\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+138            android:exported="false"
+138-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\855896d6a2ab35da8c7143b49e730807\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+139            android:multiprocess="true" />
+139-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\tashr\.gradle\caches\transforms-2\files-2.1\855896d6a2ab35da8c7143b49e730807\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+140    </application>
+141
+142</manifest>
