@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">227935195257-12n64ip3u17nlt8ig8gerhnaknfnhe4l.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://rent-home-7a3e6.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">227935195257</string>
+    <string name="google_api_key" translatable="false">AIzaSyDRsVKNPwxg5zL2xO3Z0nDgDiic8u3MkQk</string>
+    <string name="google_app_id" translatable="false">1:227935195257:android:429016d38dce1c9a4504a8</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDRsVKNPwxg5zL2xO3Z0nDgDiic8u3MkQk</string>
+    <string name="google_storage_bucket" translatable="false">rent-home-7a3e6.appspot.com</string>
+    <string name="project_id" translatable="false">rent-home-7a3e6</string>
+</resources>
